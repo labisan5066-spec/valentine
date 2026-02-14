@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg">
+
+<div class="card">
+  <h1>📊 Dashboard</h1>
+
+  <p id="totalUsers">ผู้รับทั้งหมด: 0</p>
+
+  <canvas id="flowerChart"></canvas>
+
+  <button id="resetBtn">รีเซ็ตข้อมูลวันนี้</button>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รับดอกไม้ 🌸</title>
+
+  <!-- กัน cache -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- html2canvas -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body class="bg">
+
+  <div class="card" id="card">
+
+    <h1>💐 รับดอกไม้ของคุณ</h1>
+
+    <input 
+      id="nameInput"
+      type="text"
+      placeholder="ชื่อเล่น"
+      autocomplete="off"
+      maxlength="20"
+    >
+
+    <button id="startBtn">รับเลย</button>
+
+    <p id="countText">🌷 วันนี้มีคนรับดอกไม้แล้ว 0 คน</p>
+
+    <div id="result" class="hidden">
+
+      <img id="flowerImg" alt="flower image">
+
+      <h2 id="flowerName"></h2>
+      <p id="flowerMeaning"></p>
+
+      <h3 id="message"></h3>
+      <h3 id="songTitle"></h3>
+
+      <iframe
+        id="playerFrame"
+        width="300"
+        height="170"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+
+      <button id="shareBtn" class="hidden">
+        แชร์ลงสตอรี่
+      </button>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
